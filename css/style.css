@@ -3,9 +3,26 @@
 /**************************************************/
 /* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
 /**************************************************/
+:root {
+  --bs-font-sans-serif: "Times New Roman";
+}
 
 #hero {
   background-color: azure;
+}
+
+#hero div {
+  /* place-items: center; */
+  justify-items: center;
+  align-items: end;
+}
+
+#hero div * {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+#hero div h1 {
+  background-color: rgba(200, 0, 0, 0.8);
 }
 
 #voresis {
@@ -23,24 +40,23 @@
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* END "sm-" 576px and up */
-
 
 /**************************************************/
 /* // Medium devices (tablets, 768px and up) */
 /**************************************************/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* END "md-" 768px and up */
-
 
 /**************************************************/
 /* // Large devices (desktops, 992px and up) */
 /**************************************************/
 @media (min-width: 992px) {
-
   /* END "lg-" 992px and up */
 }
 
@@ -48,7 +64,6 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 /**************************************************/
 @media (min-width: 1200px) {
-
   /* END "xl-" 1200px and up */
 }
 
@@ -56,6 +71,5 @@
 /* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
 /**************************************************/
 @media (min-width: 1400px) {
-
   /* END "xxl-" 1400px and up */
 }
